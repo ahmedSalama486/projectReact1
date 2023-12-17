@@ -1,0 +1,75 @@
+.head {
+    padding:  20px 0;
+    color: #fff;
+}
+.logo h1 {
+    font-size: 30px;
+    font-weight: 800;
+}
+.head .icon {
+    margin-left: 10px;
+}
+/*--------Header------------*/
+header {
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 30px;
+  position: relative;
+}
+header ul {
+    padding: 25px 15px;
+}
+header li {
+    margin-right: 40px;
+}
+header ul li a {
+    color: #fff;
+    font-weight: 400 ;
+    transition: 0.5s;
+}
+header ul li a:hover {
+    color: #1eb2a6;
+}
+.start {
+    background-color: #1eb2a6;
+    padding: 30px 70px;
+    color: #fff;
+    /* style a get certification */
+    clip-path: polygon(10% 0,100% 0,100% 100%, 0 100%);
+}
+.toggle {
+    display: none;
+}
+@media screen and (max-width:768px) {
+    .start{
+        clip-path: none;
+    }
+    header {
+        margin: 0;
+        background-color: #1eb2a6;
+        position: relative;
+    }
+    
+    header ul li {
+        margin-bottom: 20px;
+    }
+
+    header ul.flexSB {
+        display: none;
+    }
+    .toggle {
+        display: block;
+        background: none;
+        font-size: 30px;
+        color: #fff;
+        position: absolute;
+        top:  -25px;
+        right: 5px;
+    }
+    .mobaile-nav {
+        position: absolute;
+        top: 9vh;
+        left: 0;
+        width: 100%;
+        background-color: #1eb2a6
+    }
+}
